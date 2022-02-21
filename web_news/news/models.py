@@ -4,10 +4,10 @@ from django.urls import reverse
 # Create your models here.
 
 class News(models.Model):
-    header = models.CharField(verbose_name='Заголовок статьи')
-    photo_link = models.CharField(verbose_name='Ссылка')
+    header = models.CharField(max_length=200, verbose_name='Заголовок статьи')
+    photo_link = models.CharField(max_length=150, verbose_name='Ссылка')
     content = models.TextField(blank=True, verbose_name='Содержимое')
-    article_link = models.CharField(verbose_name='Ссылка на оригинал')
+    article_link = models.CharField(max_length=150, verbose_name='Ссылка на оригинал')
 
     def get_absolute_url(self):
         return reverse('view_news', kwargs={'news_id': self.pk})
