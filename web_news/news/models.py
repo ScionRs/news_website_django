@@ -8,6 +8,7 @@ class News(models.Model):
     photo_link = models.CharField(max_length=150, verbose_name='Ссылка')
     content = models.TextField(blank=True, verbose_name='Содержимое')
     article_link = models.CharField(max_length=150, verbose_name='Ссылка на оригинал')
+    category = models.ForeignKey('Category', on_delete=models.PROTECT, null=True, related_name='get_news')
 
     def get_absolute_url(self):
         return reverse('view_news', kwargs={'news_id': self.pk})
@@ -18,9 +19,6 @@ class News(models.Model):
     class Meta:
         verbose_name = 'Новость'
         verbose_name_plural = 'Новости'
-
-
-
 
 
 class Category(models.Model):
