@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="news">
+    <div class="container">
+        <div class="news__items">
+            {% for n in news %}
+            <div class="news__item">
+                <div class="news__category">
+                    <a href="#" class="news__category-text">{{n.category}}</a>
+                </div>
+                <a href="{{n.get_absolute_url}}" class="news__link">
+                <div class="news__photo">
+                    <img class="news__photo-img" src="{{n.photo_link}}" alt="Photo">
+                    <div class="news__description-title">
+                        {{n.header}}
+                    </div>
+                </div>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

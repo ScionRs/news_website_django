@@ -1,0 +1,14 @@
+<nav class="nav">
+    <div class="container">
+        <div class="nav__response">
+        <!--<div class="nav__logo">
+            <p><sup id="nav__first">Новости</sup> // <sub id="nav__second">Мира</sub></p>
+        </div>-->
+        <ul class="nav__menu">
+            {% for category in categories %}
+            <li class="nav__item"><a href="#" class="nav__item-link">{{category.title}}</a></li>
+            {% endfor %}
+        </ul>
+        </div>
+    </div>
+</nav>

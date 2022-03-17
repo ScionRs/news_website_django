@@ -1,0 +1,151 @@
+body {
+  background-color: #f5f5f5;
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  font-display: swap;
+  src: url("../fonts/RobotoSlab-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-display: swap;
+  src: url("../fonts/PTSans-Regular.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+.container {
+  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.nav {
+  background-color: white;
+  width: 100%;
+  margin: 0;
+}
+.nav__response {
+  display: flex;
+  justify-content: center;
+}
+.nav__logo {
+  display: flex;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 1.5rem;
+}
+.nav__menu {
+  display: flex;
+  list-style-type: none;
+}
+.nav__item-link {
+  display: block;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 20px 20px;
+  color: black;
+  text-decoration: none;
+}
+.nav__item-link:hover {
+  color: red;
+  transition: 0.5s all;
+}
+
+#nav__first {
+  color: red;
+  font-size: 1.5rem;
+}
+
+#nav__second {
+  color: lightseagreen;
+  font-size: 1.5rem;
+}
+
+.news__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.news__item {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 450px;
+  margin-top: 30px;
+  box-shadow: 14px 48px 21px 23px rgba(34, 60, 80, 0.2);
+}
+.news__category {
+  padding: 15px;
+}
+.news__category-text {
+  font-family: "PT Sans", sans-serif;
+  color: red;
+  font-weight: bold;
+  text-decoration: none;
+}
+.news__photo {
+  position: relative;
+}
+.news__photo-img {
+  width: 100%;
+  height: 450px;
+}
+.news__description-title {
+  color: white;
+  position: absolute;
+  font-family: "PT Sans", sans-serif;
+  line-height: 1.4;
+  font-weight: bold;
+  font-size: 1.5rem;
+  bottom: 8px;
+  left: 16px;
+}
+
+.page {
+  margin-top: 30px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.page__photo {
+  width: 900px;
+}
+.page__title {
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  line-height: 1.4;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 900px;
+  margin-bottom: 30px;
+}
+.page__description {
+  margin-top: 30px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.3rem;
+  color: #575252;
+  width: 950px;
+  text-align: center;
+  line-height: 1.4;
+}
+.page__link a {
+  display: block;
+  margin-top: 30px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

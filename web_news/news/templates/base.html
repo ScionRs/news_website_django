@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/reset.css'%}" rel="stylesheet"  crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}" rel="stylesheet"  crossorigin="anonymous">
+</head>
+<body>
+    {% include 'inc/_nav.html' %}
+
+    {% block content %}CONTENT{% endblock %}
+
+</body>
+</html>
